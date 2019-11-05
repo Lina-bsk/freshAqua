@@ -1,0 +1,71 @@
+.review-card {
+  min-width: 260px;
+  max-width: 330px;
+  min-height: 317px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 328px;
+    max-width: 33%;
+  }
+}
+
+.review-card--hidden {
+  display: none;
+}
+
+.review-card__img {
+  object-fit: cover;
+  display: block;
+  height: 187px;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.review-card__play+.review-card__img {
+  filter: brightness(0.5);
+}
+
+.review-card__link {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/loupe.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.review-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.review-card__title {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 20px;
+
+  &--test {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 22px 20px;
+  }
+}
+
+.review-card__img-block {
+  display: none;
+}

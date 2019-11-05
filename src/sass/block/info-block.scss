@@ -1,0 +1,165 @@
+.info-block {
+  list-style: none;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    margin: 20px 15px 0 20px;
+
+
+    &--service {
+      margin: 20px 15px 0;
+      justify-content: space-between;
+    }
+  }
+}
+
+.info-block__item {
+  min-height: 365px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    width: 48%;
+    min-height: 236px;
+    height: 236px;
+     margin-bottom: 20px;
+
+    &--hover:not(:nth-child(2n)) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.info-block--service li {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    width: 32%;
+  }
+}
+
+.info-block__item-service {
+  &--card {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $white;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 20px;
+    background-repeat: no-repeat;
+  }
+
+    &--card1 {
+      background-image: url("../img/bg-service1.jpg");
+      background-repeat: no-repeat;
+    }
+
+    &--card2 {
+      background-image: url("../img/bg-service2.jpg");
+      background-repeat: no-repeat;
+    }
+
+    &--card3 {
+      background-image: url("../img/bg-service3.jpg");
+      background-repeat: no-repeat;
+    }
+
+  @media (min-width: $desktop-width) {
+     height: 518px;
+     overflow: auto;
+  }
+}
+
+.info-block__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 25px 25px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    @include dashed;
+  }
+
+  &--1,
+  &--2 {
+    background-image: url("../img/cleaning.png"),
+      url("../img/bg-cleaning.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px 250px, cover;
+    background-position: 0 center, center;
+  }
+
+  &--3 {
+    background-image: url("../img/cleaning-comfort.png"),
+      url("../img/bg-cleaning2.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px 250px, cover;
+    background-position: 0 center, center;
+  }
+
+  &--4 {
+    background-image: url("../img/cleaning-standard.png"),
+      url("../img/bg-cleaning3.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px 250px, cover;
+    background-position: 0 center, center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+
+    &--4 {
+      background-position: -50px center, center;
+    }
+
+    &--service {
+      padding: 40px;
+      background-size: 650px 350px, cover;
+    }
+  }
+}
+
+.info-block__item--hover:hover .info-block__inner {
+  background-color: $white;
+  opacity: 0.3;
+  z-index: 1;
+  transition: $time;
+}
+
+.info-block__item--hover:hover .button__info-block {
+  display: block;
+  z-index: 50;
+}
+
+.info-block__title {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 18px;
+  }
+}
+
+.info-block__details {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(18, 18, 18, 0.6);
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

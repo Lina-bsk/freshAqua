@@ -1,0 +1,36 @@
+.page-top {
+  background-image: url("../img/bg-top.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &--industrial {
+    background-image: url("../img/bg-industrial.jpg");
+  }
+
+  &--service {
+    background-image: url("../img/bg-service.jpg");
+  }
+}
+
+.page-top__block {
+  @media (min-width: $desktop-width) {
+    min-height: 875px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url("../img/img-promo.png");
+    background-repeat: no-repeat;
+    background-position: 90% bottom;
+
+    &--industrial {
+      background-image: url("../img/img-promo2.png");
+    }
+
+    &--service {
+      background-image: url("../img/img-promo3.png");
+    }
+  }
+}

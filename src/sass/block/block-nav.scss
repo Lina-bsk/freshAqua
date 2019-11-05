@@ -1,0 +1,27 @@
+.block-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 37px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin-top: 78px;
+    margin-bottom: 26px;
+  }
+}
+
+.block-nav__link {
+  display: block;
+  font-weight: 700;
+  color: rgba(18, 18, 18, 0.8);
+  padding: 10px 27px 9px;
+  background-color: rgba(18, 18, 18, 0.05);
+  border-radius: 5px;
+  margin: 0 15px 15px 0;
+
+  &--active {
+    color: $white;
+    background-color: $color-top;
+  }
+}

@@ -1,0 +1,47 @@
+.modal {
+  min-width: 320px;
+  max-width: 786px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 24px 18px 200px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 0;
+}
+
+.modal img {
+  height: auto;
+  width: 100%;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    height: 422px;
+  }
+}
+
+.modal__title {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 28px 20px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.modal .fancybox-close-small {
+  background-color: $white;
+  border-radius: 5px;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+  }
+}

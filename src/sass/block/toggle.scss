@@ -1,0 +1,90 @@
+.toggle {
+  font-size: 0;
+  z-index: 60;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: $white;
+  transition: $time;
+  padding: 0;
+  outline: none;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    transition: $time;
+    height: 2px;
+    width: 28px;
+    background-color: $gray;
+    box-shadow: 0 7px 0 0 $gray;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    transition: $time;
+    height: 2px;
+    width: 22px;
+    background-color: $gray;
+    top: 31px;
+    left: 43%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.toggle--active::before,
+.toggle--active::after {
+  content: "";
+  background-color: $gray;
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  transition: $time;
+  box-shadow: none;
+  top: 13px;
+  left: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
+}
+
+.toggle--active::before {
+  transform: rotate(-45deg);
+}
+
+.toggle--active::after {
+  transform: rotate(45deg);
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+  }
+}
+
+.toggle:hover::before,
+.toggle:focus::before {
+  background-color: $color-top;
+  box-shadow: 0 7px 0 0 $color-top;
+}
+
+.toggle:hover::after,
+.toggle:focus::after {
+  background-color: $color-top;
+}
+
+.toggle--active:hover::before,
+.toggle--active:hover::after,
+.toggle--active:focus::before,
+.toggle--active:focus::after {
+  box-shadow: none;
+  background-color: $color-top;
+}

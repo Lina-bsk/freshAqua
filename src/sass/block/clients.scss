@@ -1,0 +1,29 @@
+.clients {
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+  }
+}
+
+.clients .swiper-slide.swiper-slide-active,
+.clients .swiper-slide {
+  height: 100px;
+}
+
+.clients__card {
+  width: 250px;
+  border: 2px solid rgba(18, 18, 18, 0.05);
+  margin: 0 auto;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: none;
+    width: 19%;
+  }
+}
+
+.clients .swiper-container {
+  padding-top: 0;
+}

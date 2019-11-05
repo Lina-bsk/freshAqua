@@ -1,0 +1,65 @@
+.plan {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 130px;
+  }
+}
+
+.plan .container {
+  padding-right: 0;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.plan__list {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 40px 15px 0;
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    display: block;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-top: 64px;
+  }
+}
+
+.plan__item {
+  padding: 30px 15px;
+  @include block;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+    height: auto;
+    padding: 21px 20px 21px 40px;
+    width: max-content;
+    margin-bottom: 28px;
+    border-radius: 5px;
+  }
+}
+
+.plan__block {
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.plan__block .slider {
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,8 @@
+.logo__img {
+  margin-top: 5px;
+
+  @media (min-width: $desktop-width) {
+    width: 154px;
+    height: 57px;
+  }
+}

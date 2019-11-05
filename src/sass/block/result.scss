@@ -1,0 +1,182 @@
+.result {
+  padding-bottom: 55px;
+  background: url("../img/bg-result.png") no-repeat;
+  background-position: center top;
+  background-size: auto 350px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 130px;
+    background-size: auto auto;
+  }
+}
+
+.result .container {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.result__slider {
+  margin-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 120px;
+  }
+}
+
+.result__list {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.result__item {
+  min-width: 260px;
+  min-height: 150px;
+  @include block;
+  position: relative;
+  padding: 18px 20px;
+  font-weight: 500;
+
+  &::before {
+    content: "";
+    position: absolute;
+    @include dashed;
+  }
+
+  &--1 {
+    background: url("../img/result-1.png"),
+                url("../img/result-1.jpg");
+    background-size: 250px 150px, auto;
+    background-position: right bottom, center;
+    background-repeat: no-repeat;
+  }
+
+  &--2 {
+    background-image: url("../img/washer.png"),
+                url("../img/result-2.jpg");
+    background-size: 100px 141px, cover;
+    background-position: right 33px, center;
+    background-repeat: no-repeat;
+  }
+
+  &--3 {
+    background-image: url("../img/sink.png"),
+                url("../img/result-3.jpg");
+    background-size: 158px 150px, cover;
+    background-position: right 10px, center;
+    background-repeat: no-repeat;
+  }
+
+  &--4 {
+    background-image: url("../img/san-pin.png"),
+                url("../img/result-4.jpg");
+    background-size: 118px 124px, cover;
+    background-position: right bottom, center;
+    background-repeat: no-repeat;
+  }
+
+  &--5 {
+    background-image: url("../img/glass.png"),
+                url("../img/result-5.jpg");
+    background-size: 105px 118px, cover;
+    background-position: right bottom, center;
+    background-repeat: no-repeat;
+  }
+
+  &--6 {
+    background-image: url("../img/fresh.png"),
+                url("../img/result-6.jpg");
+    background-size: 96px 136px, cover;
+    background-position: right bottom, center;
+    background-repeat: no-repeat;
+  }
+
+  &--7 {
+    background-image: url("../img/girl.png"),
+                url("../img/result-5.jpg");
+    background-size: 87px 130px, cover;
+    background-position: right 12px bottom, center;
+    background-repeat: no-repeat;
+  }
+
+  &--8 {
+    background-image: url("../img/calendar.png"),
+                url("../img/result-6.jpg");
+    background-size: 140px 82px, cover;
+    background-position: right bottom, center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+    min-height: 260px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 44px 40px;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 20px;
+    }
+
+    &--1 {
+      background-size: 377px 250px, cover;
+    }
+
+    &--2 {
+      background-size: 190px 265px, cover;
+      background-position: 107% 33px, center;
+    }
+
+    &--3 {
+      background-size: 258px 250px, cover;
+      background-position: 120% 35px, center;
+    }
+
+    &--4 {
+      background-size: 194px 216px, cover;
+    }
+
+    &--5 {
+      background-size: 165px 184px, cover;
+    }
+
+    &--6 {
+      background-size: 152px 233px, cover;
+    }
+
+    &--7 {
+      background-size: 144px 230px, cover;
+    }
+
+    &--8 {
+      background-size: 240px 151px, cover;
+    }
+  }
+}
+
+.result__item p {
+  max-width: 175px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 233px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,11 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 15px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 38px;
+  }
+}

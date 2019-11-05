@@ -1,0 +1,61 @@
+.examples {
+  height: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 65%;
+    margin-top: 30px;
+  }
+}
+
+.examples__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 930px;
+  }
+}
+
+.examples__card {
+  @media (min-width: $desktop-width) {
+    min-width: 252px;
+    max-width: 276px;
+    min-height: 420px;
+  }
+}
+
+.examples .review-card__img {
+  @media (min-width: $desktop-width) {
+    height: 250px;
+  }
+}
+
+.examples__title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.examples__text {
+  font-family: "Circe", "Arial", sans-serif;
+  line-height: 22px;
+}
+
+.examples__price {
+  display: block;
+  background-color: $white;
+  border-radius: 5px;
+  padding: 3px 10px;
+  color: $black;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.examples__info {
+  text-align: center;
+  padding: 20px 15px 10px;
+}
